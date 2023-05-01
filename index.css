@@ -2,8 +2,13 @@ body {
    margin: 0;
    --background-color: #232634;
    --background-color-dark: #1e202e;
+   --main-font: 'Chivo Mono', monospace;
 }
 
+::selection {
+   background-color: #33f456;
+   color: #232634;
+}
 
 .top {
    top: 0;
@@ -34,7 +39,6 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 50vh;
    background-color: var(--background-color);
  }
  
@@ -60,6 +64,57 @@ body {
    height : 50vh;
  }
 
+.projects {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: var(--background-color);
+}
+
+
+
+
+.project {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: #1e202e;
+   border: #1e202e 1px solid;
+   border-radius: 10px;
+   margin: 1vw;
+   width: 20vw;
+   height: 30vw;
+   overflow-y: auto;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+ .project h3{
+   color : #33f456;
+   text-align: center;
+ }
+
+.project p{
+   font-family: 'Chivo Mono', monospace;
+   font-size: 1vw;
+   margin: 0 1vw;
+   color: white;
+}
+
+/* cut the image if it's too big */
+
+.project img{
+   aspect-ratio: 16/9;
+   width: 20vw;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   object-fit: cover;
+}
 
 
 
@@ -106,6 +161,13 @@ h1{
    color: white;
 }
 
+h3 {
+   font-size: 1.5vw;
+   margin: 1vw;
+   color: white;
+   font-family: var(--main-font);
+}
+
 code {
    background-color: #2d2d2d;
    font-family: Consolas, monospace;
@@ -123,4 +185,55 @@ code {
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
 }
- 
+
+/* if its a mobile device, place the picture above the code section */
+/* if its ratio is 9:16, place the picture above the code section */
+@media screen and (max-width: 800px){
+   .bottom_content {
+      flex-direction: column;
+   }
+
+   .line{
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
+   .top_content {
+      margin-bottom: 0;
+   }
+
+   #user-icon{
+      width: 30vw;
+      height: 30vw;
+   }
+
+   code {
+      max-width: 90vw;
+      margin-left: 0;
+   }
+
+   .top {
+      height: 10vw;
+   }
+
+   h1 {
+      font-size: 5vw;
+   }
+
+   h3 {
+      font-size: 3vw;
+   }
+
+   #display-name{
+      font-size: 4vw;
+   }
+
+   #contact-link{
+      font-size: 4vw;
+   }
+
+   .project{
+      max-width: 50vw;
+   }
+}
+   
