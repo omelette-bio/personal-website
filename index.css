@@ -30,7 +30,7 @@ body {
    
 }
 
-.content {
+.presentation {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -107,8 +107,9 @@ code {
    display: block;
    white-space: pre-wrap;
    overflow-x: auto;
-   max-width: 40vw;
+   max-width: 42vw;
    border-radius: 5px;
+   margin-left: 2vw;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    -ms-border-radius: 5px;
