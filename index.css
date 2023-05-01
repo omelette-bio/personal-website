@@ -34,7 +34,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 100vh;
+   height: 50vh;
    background-color: var(--background-color);
  }
  
@@ -49,8 +49,16 @@ body {
    align-items: center;
    justify-content: space-around;
    margin-bottom: 1rem;
+   margin-top: 1rem;
  }
 
+.languages {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: var(--background-color);
+   height : 50vh;
+ }
 
 
 
