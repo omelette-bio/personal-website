@@ -102,11 +102,7 @@ a {
    justify-content: center;
 }
 
-
-
-
 .about-me, .languages {
-   font-family: 'Poppins', sans-serif;
    padding: 15rem;
    font-size: 1.5rem;
 }
@@ -127,19 +123,25 @@ a {
 
 .languages-content{
    width: 100%;
-   aspect-ratio: 4/1;
+   aspect-ratio: 6/1;
    background: var(--bg-color-violet);
    background-clip: content-box;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;
 }
 
+.languages-content :first-child{
+   padding-left: 2rem;
+}
 
+.languages-content :last-child{
+   padding-right: -2rem;
+}
 
 .sub-languages{
-   width: 45%;
-   aspect-ratio: 4/1;
+   width: 30%;
+   aspect-ratio: 3/1;
 }
 
 .neo-brut-border {
@@ -170,6 +172,14 @@ a {
 }
 
 .wd-ht-60 {
-   width: 13%;
-   height: 13%;
+   width: 16%;
+   height: 16%;
+}
+
+.archivo-black {
+   font-family: 'Archivo Black', sans-serif;
+}
+
+.poppins {
+   font-family: 'Poppins', sans-serif;
 }
