@@ -85,20 +85,30 @@ a {
 
 .languages-content{
    width: 100%;
+   aspect-ratio: 4/1;
+   background: #000;
    display: flex;
    justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   background-color: #AA43DD;
+   background-clip: content-box;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
 }
 
 .sub-languages{
    width: 45%;
+   aspect-ratio: 4/1;
 }
 
 .pad-l2 {
    padding-left: 2rem;
 }
 
-.pad-up-down-15 {
-   padding-top: 1.5rem;
+.pad-down-15 {
    padding-bottom: 1.5rem;
 }
 
