@@ -1,11 +1,23 @@
+:root{
+   --light-theme : #ddd;
+   --dark-theme : #333;
+   --bg-color-pink : #FF00F5;
+   --bg-color-blue : #7DF9FF;
+   --bg-color-green : #2fff2f;
+   --bg-color-yellow : #FFFF00;
+   --bg-color-orange : #FF4911;
+   --bg-color-violet : #3300FF;
+}
+
 *{
    margin: 0;
    padding: 0;
 }
 
 body {
-   background: rgb(80,9,121);
-   background: linear-gradient(90deg, rgba(80,9,121,1) 0%, rgba(122,33,154,1) 50%, rgba(196,0,255,1) 100%);
+   background-color: var(--dark-theme);
+   /*background: rgb(80,9,121);
+   background: linear-gradient(90deg, rgba(80,9,121,1) 0%, rgba(122,33,154,1) 50%, rgba(196,0,255,1) 100%);*/
 }
 
 a {
@@ -52,7 +64,7 @@ a {
    -webkit-filter: blur(7px) brightness(30%);
 }
 .title-content{
-   font-family: 'Martian Mono', monospace;
+   font-family: 'Archivo Black', sans-serif;
    position: absolute;
    top: 50%;
    left: 50%;
@@ -83,8 +95,18 @@ a {
    z-index: 1;
 }
 
+.content {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+
+
 .about-me, .languages {
-   font-family: 'Ubuntu', sans-serif;
+   font-family: 'Poppins', sans-serif;
    padding: 15rem;
    font-size: 1.5rem;
 }
@@ -93,6 +115,12 @@ a {
    padding-bottom: 4rem;
 }
 
+.about-me-content {
+   width: 100%;
+   background: var(--bg-color-orange);
+}
+
+
 .languages{
    padding-top: 4rem;
 }
@@ -100,26 +128,37 @@ a {
 .languages-content{
    width: 100%;
    aspect-ratio: 4/1;
-   background: #000;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 5px;
-   background-color: #AA43DD;
+   background: var(--bg-color-violet);
    background-clip: content-box;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   -ms-border-radius: 5px;
-   -o-border-radius: 5px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
+
+
 
 .sub-languages{
    width: 45%;
    aspect-ratio: 4/1;
 }
 
+.neo-brut-border {
+   /*make a border in neobrutalism style*/
+   border: 6px solid #000;
+   box-shadow: 6px 6px #000;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
 .pad-l2 {
    padding-left: 2rem;
+}
+
+.pad2 {
+   padding: 2rem;
 }
 
 .pad-down-15 {
