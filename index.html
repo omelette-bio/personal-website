@@ -1,84 +1,53 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Omelette Bio</title>
-      <link rel="stylesheet" href="index.css" />
+      <meta charset="utf-8"/>
+      <title>Home - Omelette Bio</title>
+
+      <link rel="stylesheet" href="index.css">
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
    </head>
    <body>
-      <div class="top">
-         <div class="top-left">
-            <h2 id="display-name">Omelette Bio</h2>
-         </div>
-         <div class="top-right">
-            <a href="contact.html" id="contact-link">Contact</a>
+
+      <div class="title">
+         <img src="images/icon.jpg" class="title-background" alt="Omelette Bio">
+         <div class="title-content">
+            <h1>Omelette Bio</h1>
+            <p>Computer Science student</p>
          </div>
       </div>
 
-      <div class="presentation">
-         <div class="top_content">
-            <h1>About Me</h1>
-         </div>
-         <div class="bottom_content">
-            <div class="content_image">
-               <img src="images/me.jpg" alt="it's just me being extremely sexy with heart-shaped sunglasses" id="user-icon"/>
-            </div>
-            <div class="content_bio">
-
-<code><span style="color: #33f456">user@site</span>:<span style="color: #f943d2">~</span> show_resume
-
-Hello, I'm Omelette Bio, a student at University Cote d'Azur, in France.
-I'm currently in my second year of a bachelor's degree in computer science.
-
-I enjoy practicing code on a daily basis, I made some fun things like a french discord chat bot, that you can see <a href="https://github.com/omelette-bio/potit_blagueur_pouete_pouete">here</a>.
-
-I also enjoy playing video games and reading mangas, you can see my collection <a href="https://www.nautiljon.com/membre/profil,franfran_sama.html">here</a>.
-Here is my <a href="https://github.com/omelette-bio">github</a> profile, where you can see my projects.
-
-My contact email is <a href="mailto:omelettebio@proton.me">omelettebio@proton.me</a>
-
-<span style="color: #33f456">user@site</span>:<span style="color: #f943d2">~</span></code>
-            
-            </div>
-         </div>
-         
+      <div class="about-me">
+         <h2 class="white-text">About Me</h2>
+         <p class="pad-l2 white-text">Hello, I'm <span>Omelette Bio</span>, a computer science student from University Côte d'Azur, Nice. <br/>
+            I'm passionate by computer science, gaming, music and mangas. <br/>
+            I love system programming, low-level programming but also all the capacities given by python. <br/>
+         </p>
       </div>
 
       <div class="languages">
-         <div class="top_content">
-            <h1>Languages</h1>
-         </div>
-         <div class="bottom_content">
-            <div>
-               <h2> Backend </h2>
-               <p> Python, C </p>
-               <h2> Frontend </h2>
-               <p> HTML, CSS, Javascript </p>
-               <h2> Learning </h2>
-               <p> Java, Rust </p>
+         <h2 class="white-text">Languages</h2>
+         <div class="languages-content">
+            <div class="sub-languages pad-l2">
+               <h3 class="white-text pad-up-down-15">Programming Languages</h3>
+               <p class="pad-l2">
+                  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" class="wd-ht-60"/> </a> 
+                  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" class="wd-ht-60"/> </a> 
+                  <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" class="wd-ht-60"/> </a> 
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" class="wd-ht-60"/> </a>
+               </p>
+            </div>
+            <div class="sub-languages pad-l2">
+               <h3 class="white-text pad-up-down-15">Frontend</h3>
+               <p class="pad-l2">
+                  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" class="wd-ht-60" height="40"/> </a> 
+                  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" class="wd-ht-60" height="40"/> </a> 
+               </p>            
             </div>
          </div>
       </div>
-
-      <div class="projects">
-         <div class="top_content">
-            <h1>Projects</h1>
-         </div>
-         <div class="bottom_content line">
-            <div class="project">
-               <img src="images/rsync-icon.jpg">
-               <h3>rsync</h3>
-               <p>A mini rsync project made by using python</p>
-            </div>
-            <div class="project">
-               <img src="images/pbpp-icon.jpg">
-               <h3>potit blagueur pouete pouete</h3>
-               <p>A french discord chat bot that makes jokes</p>
-            </div>
-      </div>
-
    </body>
 </html>
