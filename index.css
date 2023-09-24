@@ -226,3 +226,24 @@ a {
 .very-bold {
    font-weight: 900;
 }
+
+@media all and (max-width:1024px) {
+   .title-content h1{
+      font-size: 3.5rem;
+   }
+   .title-content p{
+      font-size: 2rem;
+   }
+   .about-me, .languages, .projects {
+      padding: 6rem;
+      font-size: 1.5rem;
+   }
+   .languages-content{
+      flex-direction: column;
+   }
+   .sub-languages{
+      width: 100%;
+      aspect-ratio: 6/1;
+      margin-bottom: 1.5rem;
+   }
+}
