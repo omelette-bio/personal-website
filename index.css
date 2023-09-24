@@ -1,12 +1,14 @@
 :root{
    --light-theme : #ddd;
-   --dark-theme : #333;
+   --dark-bg : #28314D;
+   --purple-bg : #dac3ff;
+   --green-bg : #F1F6F1;
    --bg-color-pink : #FF00F5;
    --bg-color-blue : #7DF9FF;
    --bg-color-green : #2fff2f;
    --bg-color-yellow : #FFFF00;
    --bg-color-orange : #FF4911;
-   --bg-color-violet : #3300FF;
+   --bg-color-violet : #6E61FF;
 }
 
 *{
@@ -15,13 +17,14 @@
 }
 
 body {
-   background-color: var(--dark-theme);
+   background-color: var(--purple-bg);
    /*background: rgb(80,9,121);
    background: linear-gradient(90deg, rgba(80,9,121,1) 0%, rgba(122,33,154,1) 50%, rgba(196,0,255,1) 100%);*/
 }
 
 a {
    text-decoration: none;
+   color: #000;
 }
 
 /* width */
@@ -102,7 +105,7 @@ a {
    justify-content: center;
 }
 
-.about-me, .languages {
+.about-me, .languages, .projects {
    padding: 15rem;
    font-size: 1.5rem;
 }
@@ -117,31 +120,62 @@ a {
 }
 
 
-.languages{
+.languages, .projects{
    padding-top: 4rem;
+   padding-bottom: 4rem;
 }
 
 .languages-content{
    width: 100%;
-   aspect-ratio: 6/1;
-   background: var(--bg-color-violet);
+   aspect-ratio: 5/1;
    background-clip: content-box;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
    align-items: center;
 }
 
 .languages-content :first-child{
-   padding-left: 2rem;
+   padding-left: 0.75rem;
 }
 
 .languages-content :last-child{
-   padding-right: -2rem;
+   padding-right: -1rem;
 }
 
 .sub-languages{
+   background: var(--bg-color-violet);
+   padding-top: 1rem;
    width: 30%;
-   aspect-ratio: 3/1;
+   aspect-ratio: 16/6;
+}
+
+.projects {
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+   flex-wrap: wrap;
+}
+
+.orange-hover{
+   width: 90%;
+}
+
+/* find a way to not change the background of the title */
+.orange-hover :hover{
+   background: #ff570f;
+}
+
+.sub-project{
+   padding: 1.5rem;
+   margin-bottom: 1.5rem;
+   background: var(--bg-color-violet);
+   width: 100%;
+   aspect-ratio: 20/1;
+}
+
+.sub-project :hover{
+   background: #ff570f;
 }
 
 .neo-brut-border {
@@ -167,19 +201,28 @@ a {
    padding-bottom: 1.5rem;
 }
 
+
 .white-text {
    color : #ddd;
 }
 
-.wd-ht-60 {
-   width: 16%;
-   height: 16%;
+.black-text {
+   color : #000;
 }
 
-.archivo-black {
-   font-family: 'Archivo Black', sans-serif;
+.wd-ht-60 {
+   width: 5rem;
+   aspect-ratio: 1/1;
+}
+
+.space-grotesk {
+   font-family: 'Space Grotesk', sans-serif;
 }
 
 .poppins {
    font-family: 'Poppins', sans-serif;
+}
+
+.very-bold {
+   font-weight: 900;
 }
