@@ -4,8 +4,20 @@
 }
 
 :root {
-   --text-color1: #0069FF;
-   --text-color2: #5C5F77;
+   --title-color-light: #000000;
+   --title-color-dark: #FFFFFF;
+   --text-color1-light: #0069FF;
+   --text-color1-dark: #E45B9F;
+   --text-color2-light: #5C5F77;
+   --text-color2-dark: #5C5F77;
+   --bg-color1-light: #FFFFFF;
+   --bg-color1-dark: #222222;
+   --bg-color2-light: #F5F5F5;
+   --bg-color2-dark: #333333;
+}
+
+body {
+   background-color: var(--bg-color1-dark);
 }
 
 header {
@@ -30,14 +42,14 @@ header {
 }
 
 section {
-   background-color: #F5F5F5;
+   height: 100vh;
+   background-color: var(--bg-color2-dark);
 }
 
 .sub-section {
    display: flex;
    flex-direction: column;
    width: 50%;
-   height: 100vh;
    margin-left: auto;
    margin-right: auto;
 }
@@ -45,20 +57,22 @@ section {
 h1 {
    font-family: 'Epilogue', sans-serif;
    font-size: 2.625rem;
+   color: var(--title-color-dark);
 }
 
 h2 {
    font-family: 'Epilogue', sans-serif;
    font-size: 1.875rem;
    margin-top: 5rem;
+   color: var(--title-color-dark);
 }
 
 #blue-text {
-   color: var(--text-color1);
+   color: var(--text-color1-dark);
 }
 
 #gray-text {
-   color: var(--text-color2);
+   color: var(--text-color2-dark);
 }
 
 .sub-text {
@@ -70,4 +84,11 @@ p {
    font-family: 'Inter', sans-serif;
    font-weight: 300;
    font-size: 1.2rem;
+   color: var(--title-color-dark);
+}
+table, td, th{
+   table-layout: fixed;
+   width: 100%;
+   border-collapse: collapse;
+   border: 1px solid #000;
 }
