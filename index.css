@@ -67,6 +67,18 @@ h2 {
    color: var(--title-color-dark);
 }
 
+h3 {
+   font-family: 'Epilogue', sans-serif;
+   font-size: 1.5rem;
+   margin-top: 2rem;
+   margin-bottom: 0.75rem;
+   color: var(--title-color-dark);
+}
+
+a {
+   text-decoration: none;
+}
+
 #blue-text {
    color: var(--text-color1-dark);
 }
@@ -91,4 +103,8 @@ table, td, th{
    width: 100%;
    border-collapse: collapse;
    border: 1px solid #000;
+}
+
+article {
+   margin-left : 2rem;
 }
