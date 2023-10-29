@@ -43,11 +43,11 @@ header {
 
 footer {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    width: 50%;
    justify-content:center;
-   height: 10vh;
+   height: 15vh;
    margin-left: auto;
    margin-right: auto;
 }
@@ -98,9 +98,13 @@ a {
    color: var(--text-color2-dark);
 }
 
-.sub-text {
+.sub-text, .bottom-text {
    font-family: 'JetBrains Mono', monospace;
    font-size: 1.375rem;
+}
+
+.bottom-text {
+   margin-top: 2rem;
 }
 
 p {
