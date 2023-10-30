@@ -123,3 +123,41 @@ table, td, th{
 article {
    margin-left : 2rem;
 }
+
+@media screen and (max-width: 768px) {
+   header {
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+   }
+   .mt2 {
+      margin-top: 2rem;
+   }
+   footer {
+      width: 100%;
+   }
+   section {
+      min-height: 200vh;
+   }
+   .sub-section {
+      width: 90%;
+   }
+   h1 {
+      font-size: 2rem;
+   }
+   h2 {
+      font-size: 1.5rem;
+   }
+   h3 {
+      font-size: 1.25rem;
+   }
+   .sub-text, .bottom-text {
+      font-size: 1.125rem;
+   }
+   p {
+      font-size: 1rem;
+   }
+   article {
+      margin-left : 0;
+   }
+}
