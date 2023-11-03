@@ -98,6 +98,10 @@ a {
    color: var(--text-color2-dark);
 }
 
+.jap {
+   font-family: 'Noto Sans JP', sans-serif !important;
+}
+
 .sub-text, .bottom-text {
    font-family: 'JetBrains Mono', monospace;
    font-size: 1.375rem;
