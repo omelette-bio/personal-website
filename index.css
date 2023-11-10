@@ -46,7 +46,7 @@ section a {
    align-items: center;
 }
 
-a svg {
+a svg, a img {
    margin-left: 0.5rem;
    margin-top: 1rem;
 }
@@ -75,6 +75,7 @@ footer {
 section {
    min-height: 160vh;
    background-color: var(--bg-color2-dark);
+   padding-bottom: 7rem;
 }
 
 .sub-section {
