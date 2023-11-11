@@ -107,6 +107,19 @@ h3 {
    color: var(--title-color-dark);
 }
 
+h3::before {
+   content: '>';
+   margin-right: 0.5rem;
+}
+
+/* put a link icon after the h3 */
+.link::after {
+   content: url(docs/link.svg);
+   margin-left: 0.5rem;
+   display: inline-block;
+   vertical-align: middle;
+}
+
 a {
    text-decoration: none;
 }
