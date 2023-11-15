@@ -151,6 +151,11 @@ p {
    font-size: 1.2rem;
    color: var(--title-color-dark);
 }
+
+.test {
+   font-family: 'Poppins', sans-serif;
+}
+
 table, td, th{
    table-layout: fixed;
    width: 100%;
