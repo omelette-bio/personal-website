@@ -95,16 +95,34 @@ h1 {
 h2 {
    font-family: 'Epilogue', sans-serif;
    font-size: 1.875rem;
-   margin-top: 5rem;
+   margin-top: 3rem;
    color: var(--title-color-dark);
 }
 
 h3 {
    font-family: 'Epilogue', sans-serif;
    font-size: 1.5rem;
-   margin-top: 2rem;
-   margin-bottom: 0.75rem;
+   margin-top: 1rem;
    color: var(--title-color-dark);
+}
+
+ul {
+   margin-left: 2rem;
+}
+
+li {
+   margin-top: 1.2rem;
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+}
+
+li h3 {
+   margin-top: 0;
+}
+
+.comps {
+   margin-left: 1rem;
 }
 
 h3::before {
@@ -154,6 +172,7 @@ p {
 
 .test {
    font-family: 'Poppins', sans-serif;
+   margin-top: 1rem;
 }
 
 table, td, th{
