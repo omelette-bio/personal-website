@@ -131,10 +131,10 @@ li h3 {
    margin-top: 0;
 }
 
-h3::before {
+/* h3::before {
    content: '>';
    margin-right: 0.5rem;
-}
+} */
 
 /* put a link icon after the h3 */
 .link::after {
