@@ -1,24 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url(vars.css);
 
 * {
    margin: 0;
    padding: 0;
-}
-
-:root {
-   --title-color-dark: #FFFFFF;
-   --text-color1-dark: #E45B9F;
-   /* --text-color1-dark: rgb(74, 239, 152); */
-   --text-color2-dark: #6d7088;
-   --text-color3-dark: #4aef98;
-   --bg-color1-dark: #222222;
-   --bg-color2-dark: #272727;
-
-   --font-1 : 'Share Tech Mono', monospace;
-   --font-2 : 'JetBrains Mono', monospace;
-   --font-3 : 'Inter', sans-serif;
-   --font-4 : 'Epilogue', sans-serif;
-   --font-5 : 'Poppins', sans-serif;
 }
 
 .color1 {
@@ -144,11 +129,6 @@ li h3 {
    margin-top: 0;
 }
 
-/* h3::before {
-   content: '>';
-   margin-right: 0.5rem;
-} */
-
 /* put a link icon after the h3 */
 .link::after {
    content: url(docs/link.svg);
@@ -190,10 +170,6 @@ table, td, th{
    border: 1px solid #000;
 }
 
-/* article {
-   margin-left : 2rem;
-} */
-
 li {
    display: flex;
    flex-direction: row;
@@ -205,10 +181,6 @@ li {
    font-size: 1.5rem;
    color: var(--title-color-dark)
 }
-
-/* .comps li::before {
-   content: '~';
-} */
 
 .links {
    display: flex;

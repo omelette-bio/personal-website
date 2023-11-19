@@ -1,0 +1,14 @@
+:root {
+  --title-color-dark: #FFFFFF;
+  --text-color1-dark: #EF4AA1;
+  --text-color2-dark: #6d7088;
+  --text-color3-dark: #4aef98;
+  --bg-color1-dark: #222222;
+  --bg-color2-dark: #272727;
+
+  --font-1 : 'Share Tech Mono', monospace;
+  --font-2 : 'JetBrains Mono', monospace;
+  --font-3 : 'Inter', sans-serif;
+  --font-4 : 'Epilogue', sans-serif;
+  --font-5 : 'Poppins', sans-serif;
+}
