@@ -1,5 +1,3 @@
-<!--https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white-->
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -24,31 +22,30 @@
     >
   </head>
   <body>
-    <header>
-      <div class="header flex-col-center">
-        <p class="sub-text color1">[ omelette-bio ]</p>
-        <h1>Francois Flandin.</h1>
-        <p class="sub-text color2">
-          CS student at University Côte d’Azur,<br>passionate about computer science, low level development, and computer architecture.
-          <!-- Étudiant en L3 info d’Université Côte d’Azur,<br>passioné d'informatique, de développement bas niveau, ainsi que d'architecture des ordinateurs. -->
-        </p>
-        <div>
-          <ul class="links color3">
-            <li>[ <a href="docs/cv_light.pdf" download target="_blank"><!--mon cv-->my resume</a> ]</li>
-            <li>[ <a href="https://github.com/omelette-bio" target="_blank">github</a> ]</li>
-            <li>[ <a>linkedin</a> ]</li>
-          </ul>
+    <main>
+      <header>
+        <div class="header flex-col-center">
+          <p class="sub-text color1">[ omelette-bio ]</p>
+          <h1>Francois Flandin.</h1>
+          <p class="sub-text color2">
+            CS student at University Côte d’Azur,<br>passionate about computer science, low level development, and computer architecture.
+          </p>
+          <div>
+            <ul class="links color3">
+              <li>[ <a href="docs/cv_light.pdf" download target="_blank"><!--mon cv-->my resume</a> ]</li>
+              <li>[ <a href="https://github.com/omelette-bio" target="_blank">github</a> ]</li>
+              <li>[ <a>linkedin</a> ]</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </header>
-    <section>
-      <!-- formations -->
-      <div class="sub-section">
-        <h2 class="color1">
-          [ course ]
-          <!-- [ formations ] -->
-        </h2>
-        <article>
+      </header>
+
+
+
+      <section>
+
+        <article class="flex-col-center">
+          <h2 class="part-title">my studies</h2>
           <a href="https://upinfo.univ-cotedazur.fr">
             <h3 class="link">
               University Nice Côte d'Azur [2021 - 2024]
@@ -59,169 +56,68 @@
             Computer Science Licence<br>Member of the computer club during the year 2023 - 2024
           </p>
         </article>
-      </div>
-      <!-- compétences -->
-      <div class="sub-section">
-        <h2 class="color1">
-          <!-- [ compétences ] -->
-          [ skills ]
-        </h2>
-        <ul class="comps">
-          <li id="mg1">[ Frontend ]<span> HTML, CSS, JAVASCRIPT</span></li>
-          <li>[ Programming ]<span> Python, Rust, C, Java, Ocaml</span></li>
-          <li>[ Languages ]<span> Anglais (B2)</span></li>
-          <li>[ Others ]</li>
-          <li class="li-component">
-            <!-- - Conception de micro architecture de processeurs -->
-            - Processor micro architecture design
-          </li>
-          <li class="li-component">
-            <!-- - Programmation système -->
-            - System programming
-          </li>
-          <li class="li-component">
-            <!-- - Programmation orientée objet -->
-            - Object oriented programming
-          </li>
-          <li class="li-component">
-            <!-- - Programmation fonctionnelle -->
-            - Functional programming
-          </li>
-          <li class="li-component">
-            - Git, Linux, Windows, Bash, NeoVim, VSCode, Discord.py
-          </li>
-        </ul>
-      </div>
 
-      <!-- projets univ -->
-      <div class="sub-section">
-        <h2 class="color1">
-          [ university projects ]
-          <!-- [ projets universitaires ] -->
-        </h2>
-        <article>
+        <article class="flex-col-center">
+          <h2 class="part-title">my skills</h2>
+          <ul class="comps">
+            <li class="comps-title">[ frontend ]</li>
+            <li class="comps-elem">HTML, CSS, JAVASCRIPT</li>
+            <li class="comps-title">[ programming ]</li>
+            <li class="comps-elem">Python, Rust, C, Java, OCaml</li>
+            <li class="comps-title">[ languages ]</li>
+            <li class="comps-elem">French (native), English (B2)</li>
+          </ul>
+        </article>
+        
+        <article class="flex-col-center">
+          <h2 class="part-title">university projects</h2>
+
           <a href="https://github.com/omelette-bio/bataille-navale">
-            <h3 class="link">
-              battleship [12.2022]
-              <!-- Bataille Navale [12.2022] -->
-            </h3>
+            <h3 class="link">battleship [12.2022]</h3>
           </a>
-          <p>
-            End of semester project of the data structures and C programming course
-            <!-- Projet de fin de semestre de l'ue structures de données et programmation C. -->
-          </p>
-        </article>
-        <article>
+          <p>End of semester project of the data structures and C programming course</p>
+
           <a href="https://github.com/omelette-bio/mrsync">
-            <h3 class="link">
-              mrsync [05.2023]
-            </h3>
-            
+            <h3 class="link">mrsync [05.2023]</h3>
           </a>
-          <p>
-            End of semester project of the system programming course, consisting of making a mini rsync, only works locally
-            <!-- Projet de fin de semestre de l'ue programmation système, consistant à faire un mini rsync, fonctionne uniquement en local -->
-          </p>
-        </article>
-        <article>
+          <p>End of semester project of the system programming course, consisting of making a mini rsync, only works locally</p>
+
           <a href="https://github.com/omelette-bio/projet-concept-ia">
-            <h3 class="link">
-              <!-- Concepts IA [05.2023] -->
-              ai concepts [05.2023]
-            </h3>
-            
+            <h3 class="link">ai concepts [05.2023]</h3>
           </a>
-          <p>
-            End of semester project of the ai concepts course, consisting of making a program creating problem solving graphs
-            <!-- Projet de fin de semestre de l'ue concepts de l'intelligence artificielle, 
-            consistant à faire un programme créant des graphes de
-            résolution de problèmes -->
-          </p>
-        </article>
-        <article>
+          <p>End of semester project of the ai concepts course, consisting of making a program creating problem solving graphs</p>
+
           <a href="https://github.com/omelette-bio/les-nuits-de-padhiver">
-            <h3 class="link">
-              <!-- RPG textuel [09.2023] -->
-              text rpg [09.2023]
-            </h3>
+            <h3 class="link">text rpg [09.2023]</h3>
           </a>
-          <p>
-            First project of the object oriented programming and design course, consisting of making a simple rpg in java, 
-            in order to get familiar with object oriented programming.
-            <!-- Premier projet de l'ue programmation et conception orientée objet, consistant à
-            faire un petit rpg simple en java, afin de se familiariser avec la
-            programmation orientée objet. -->
-          </p>
-        </article>
-        <article>
-          <a href="#">
-            <h3 class="link">
-              <!-- Convertisseur Midi -> wav [10.2023] -->
-              midi to wav converter [10.2023]
-            </h3>
+          <p>First project of the object oriented programming and design course, consisting of making a simple rpg in java, 
+            in order to get familiar with object oriented programming.</p>
+          
+          <a href="https://github.com/omelette-bio/midi2wav">
+            <h3 class="link">midi to wav converter [10.2023]</h3>
           </a>
           <p>
             Second project of the object oriented programming and design course, consisting of making a midi to wav file converter,
             in order to learn how to use external libraries.
-            <!-- Deuxième projet de l'ue programmation et conception orientée objet, consistant à
-            faire un convertisseur de fichier midi en fichier wav, afin
-            d'apprendre à utiliser des libraries externes. -->
           </p>
-        </article>
-      </div>
-      <!-- projets perso -->
-      <!-- <div class="sub-section">
-        <h2 class="color1">Projets personnels</h2>
-        <article>
-          <a href="https://github.com/omelette-bio/potit_blagueur_pouete_pouete">
-            <h3 class="link">Potit blagueur pouete pouete [04.2023]</h3>
-          </a>
-          <p>
-            Bot discord en python permettant de faire des blagues avec l'api blagues ainsi que de répondre feur.
-          </p>
-        </article>
-        <article>
-          <a href="https://github.com/omelette-bio/gamepass2lghub">
-            <h3 class="link">gamepass to lghub [08.2023]</h3>
-          </a>
-          <p>
-            Programme python permettant d'ajouter des jeux Xbox Gamepass à Logitech G Hub, afin de sauvegarder ses paramètres de jeux.
-          </p>
-          </h3>
-        </article>
-        <article>
-          <a href="https://github.com/omelette-bio/cow_discord_bot">
-            <h3 class="link">Cow interpreter discord bot [09.2023]</h3>
-          </a>
-          <p>
-            Bot discord en python permettant d'intérpreter du code cow, soit en l'écrivant dans un message, soit en envoyant un fichier.
-          </p>
-        </article>
-        <article>
-          <a href="https://ieba2.github.io/HydroSharks-website/">
-            <h3 class="link">Site web HydroSharks Seatech [11.2023]</h3>
-          </a>
-          <p>
-            Conception d'un site web pour l'association étudiante HydroSharks SeaTech basée à l'Université de Toulon.
-          </p>
-          </h3>
-        </article>
-      </div> -->
+      </section>
 
-    </section>
-    <footer>
-      <ul class="links color3">
+
+
+
+      <footer>
+        <ul class="links color3">
         <li>
-          [ <a href="mailto:flandinfrancois@proton.me">mail</a>]
-          [ <a href="https://steamcommunity.com/id/omelette-bio/">steam</a>]
-          [ <a href="https://open.spotify.com/user/zezwiafwzq7l4pl1onljkzcqz?si=db177d2914164c6e">spotify</a>]
-          [ <a href="https://discordapp.com/users/381898390662807565">discord</a>]
+          [ <a href="mailto:flandinfrancois@proton.me">mail</a> ]
+          [ <a href="https://steamcommunity.com/id/omelette-bio/">steam</a> ]
+          [ <a href="https://open.spotify.com/user/zezwiafwzq7l4pl1onljkzcqz?si=db177d2914164c6e">spotify</a> ]
+          [ <a href="https://discordapp.com/users/381898390662807565">discord</a> ]
         </li>
       </ul>
       <p class="bottom-text color2">
         <!-- Développé par Francois Flandin -->
         Developed by Francois Flandin
       </p>
-    </footer>
+      </footer>
+    </main>
   </body>
-</html>
