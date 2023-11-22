@@ -18,6 +18,21 @@
    color: var(--text-color3-dark);
 }
 
+.text-highlight {
+   background-color: var(--highlight-color);
+   color: var(--title-color-dark);
+}
+
+.rust {
+   background-color: var(--highlight-rust-color);
+   color: var(--title-color-dark);
+}
+
+.python {
+   background-color: var(--highlight-python-color);
+   color: var(--title-color-dark);
+}
+
 .font6 {
    font-family: var(--font-6);
 }

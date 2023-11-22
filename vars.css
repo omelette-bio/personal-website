@@ -1,8 +1,13 @@
 :root {
   --title-color-dark: #FFFFFF;
   --text-color1-dark: #EF4AA1;
-  --text-color2-dark: #6d7088;
+  --text-color2-dark: #7e8199;
   --text-color3-dark: #4aef98;
+
+  --highlight-color: #7e57c2;
+  --highlight-rust-color: #f44a00;
+  --highlight-python-color: #3776AB;
+
   --bg-color1-dark: #222222;
   --bg-color2-dark: #272727;
 
