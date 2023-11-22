@@ -28,6 +28,10 @@
    color: var(--title-color-dark);
 }
 
+.rust-svg {
+   fill : #fff;
+}
+
 .python {
    background-color: var(--highlight-python-color);
    color: var(--title-color-dark);
@@ -39,6 +43,10 @@
 
 body {
    background-color: var(--bg-color1-dark);
+}
+
+.icon {
+   width: 5rem;
 }
 
 .flex-row-center {
@@ -143,6 +151,7 @@ h1 {
 .comps-title, h3 {
    margin-top : 2rem;
    font-size: 1.8rem!important;
+   font-family: var(--font-6)!important;
 }
 
 a {
