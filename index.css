@@ -108,20 +108,20 @@ h1 {
    flex-direction: row;
    align-items: center;
    font-family: var(--font-1);
-}
 
-.links a {
-   text-decoration: underline;
-   color: var(--color3);
-}
+   a {
+      text-decoration: underline;
+      color: var(--color3);
+   }
 
-.links a:hover {
-   cursor: pointer;
-}
+   a:hover {
+      cursor: pointer;
+   }
 
-.links li {
-   font-size: 1.2rem;
-   list-style: none;
+   li {
+      font-size: 1.2rem;
+      list-style: none;
+   }
 }
 
 .sub-text {
@@ -176,4 +176,28 @@ footer {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+   .header {
+      width: 90%;
+   }
+
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   .sub-text {
+      font-size: 1.2rem;
+   }
+
+   .links {
+      /* newline if too long */
+      flex-wrap: wrap;
+   }
+
+   article {
+      width: 90%;
+   }
+   
 }
