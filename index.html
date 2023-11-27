@@ -46,12 +46,12 @@
 
         <article class="flex-col-center">
           <h2 class="part-title">about me</h2>
-          <p>
-            Hello, my name is <span class="text-highlight">Francois Flandin</span> <br><br>
-            I'm a CS student at University Côte d’Azur, <br>passionate about computer science, low level development, and computer architecture.<br><br>
-            I'm currently learning <span class="rust">Rust</span>, and it's my favorite programming language with <span class="python">Python</span>.<br>
-            But I also like to use C, Java, and OCaml.
-          </p>
+          <div class="flex-col-center">
+            <p class="intro">Hello, my name is <span class="text-highlight">Francois Flandin</span></p>
+            <p class="intro">I'm a CS student at University Côte d’Azur, <br>passionate about computer science, low level development, and computer architecture.</p>
+            <p class="intro">I'm currently learning <span class="rust">Rust</span>, and it's my favorite programming language with <span class="python">Python</span>.<br>
+            But I also like to use C, Java, and OCaml.</p>
+          </div>
         </article>
 
         <article class="flex-col-center">
@@ -70,12 +70,18 @@
         <article class="flex-col-center">
           <h2 class="part-title">my skills</h2>
           <ul class="comps">
-            <li class="comps-title">[ frontend ]</li>
-            <li class="comps-elem">HTML, CSS, JAVASCRIPT</li>
             <li class="comps-title">[ programming ]</li>
-            <li class="comps-elem">Python, Rust, C, Java, OCaml</li>
+            <li class="comps-elem">
+              <img src="docs/icons/rust.png" alt="rust" class="icons">
+              <img src="docs/icons/python.png" alt="python" class="iconxw">
+              <img src="docs/icons/c.png" alt="c" class="iconxw">
+              <img src="docs/icons/java.png" alt="java" class="iconxw">
+              <img src="docs/icons/ocaml.png" alt="ocaml" class="iconxw">
+            </li>
             <li class="comps-title">[ languages ]</li>
             <li class="comps-elem">French (native), English (B2)</li>
+            <li class="comps-title">[ others ]</li>
+            <li class="comps-elem">Processor microarchitecture design, computer architecture, linux, low level development, system programming, object-oriented programming, functionnal programming</li>
           </ul>
         </article>
         
@@ -88,7 +94,7 @@
           <p>End of semester project of the data structures and C programming course</p>
 
           <a href="https://github.com/omelette-bio/mrsync" target="_blank">
-            <h3 class="link">mrsync [05.2023]</h3>
+            <h3 class="link">mini-rsync [05.2023]</h3>
           </a>
           <p>End of semester project of the system programming course, consisting of making a mini rsync, only works locally</p>
 

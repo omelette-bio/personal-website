@@ -6,6 +6,11 @@
    padding: 0;
 }
 
+::selection {
+   background-color: var(--highlight-color);
+   color: var(--title-color-dark);
+}
+
 .color1 {
    color: var(--text-color1-dark);
 }
@@ -45,8 +50,17 @@ body {
    background-color: var(--bg-color1-dark);
 }
 
-.icon {
-   width: 5rem;
+.icons {
+   width: 6rem;
+   vertical-align: middle;
+}
+.iconxw {
+   width: 4rem;
+   vertical-align: middle;
+}
+
+.intro {
+   margin-top: 1rem;
 }
 
 .flex-row-center {
@@ -143,7 +157,7 @@ h1 {
 }
 
 .comps-elem {
-   margin-top : 0.5rem;
+   margin-top : 1rem;
    font-family: var(--font-6)!important;
    color: var(--text-color2-dark)!important;
 }
