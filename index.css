@@ -51,11 +51,11 @@ body {
 }
 
 .icons {
-   width: 6rem;
+   width: 5.5rem;
    vertical-align: middle;
 }
 .iconxw {
-   width: 4rem;
+   width: 3.5rem;
    vertical-align: middle;
 }
 
@@ -141,6 +141,7 @@ h1 {
 .sub-text {
    font-family: var(--font-2);
    font-size: 1.375rem;
+   margin-bottom: 1rem;
 }
 
 .part-title {
@@ -182,6 +183,18 @@ p {
    font-size: 1.4rem;
    color: var(--text-color2-dark);
 }
+
+.jsp {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+   span {
+      margin-right: 1rem;
+   }
+}
+
+
 
 footer {
    width: 100%;
