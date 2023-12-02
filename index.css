@@ -90,7 +90,7 @@ body {
 
 header {
    width: 100%;
-   height: 100vh;
+   height: 80vh;
 }
 
 article:first-child {
@@ -99,15 +99,18 @@ article:first-child {
 
 article {
    width: 50%;
-   min-height: 30vh;
    margin-bottom: 10rem;
+   background-color: var(--bg-color2-dark);
+   padding: 2rem;
+   border-radius: 1rem;
+   border: 2px solid var(--ctp-mocha-flamingo);
 }
 
 section {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: var(--bg-color2-dark);
+   /* background-color: var(--bg-color2-dark); */
 }
 
 
@@ -145,8 +148,10 @@ h1 {
 }
 
 .part-title {
-   font-family: var(--font-4);
-   font-size: 3.25rem;
+   /* font-family: var(--font-4); */
+   font-family: var(--font-6);
+   font-size: 1.8rem;
+   /* font-size: 3.25rem; */
    color: var(--text-color3-dark);
 }
 
@@ -198,11 +203,12 @@ p {
 
 footer {
    width: 100%;
-   height: 10vh;
+   height: 15vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-color: var(--bg-color2-dark);
 }
 
 @media screen and (max-width: 768px) {
