@@ -103,7 +103,7 @@ article {
    background-color: var(--bg-color2-dark);
    padding: 2rem;
    border-radius: 1rem;
-   border: 2px solid var(--ctp-mocha-flamingo);
+   border: 3px solid var(--ctp-mocha-flamingo);
 }
 
 section {
@@ -139,6 +139,11 @@ h1 {
       font-size: 1.2rem;
       list-style: none;
    }
+}
+
+.link {
+   text-decoration: underline;
+   margin-bottom: 0.5rem;
 }
 
 .sub-text {
