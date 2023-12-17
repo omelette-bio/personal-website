@@ -1,154 +1,94 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta property="og:title" content="Flandin François">
-    <meta property="og:description" content="Etudiant en L3 info">
-    <meta property="og:image" content="http://francois-flandin.fr/docs/icon.jpg">
-    <meta property="og:url" content="http://francois-flandin.fr">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src="app.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="nav-container">
+      <nav>
+        <a id='btn1'>Projects</a>
+        <a id='btn2'>Contacts</a>
+      </nav>
+    </div>
 
+    <p class="intro sub-text">Hi 👋 my name is</p>
+    <h1 class="part-title">Flandin Francois</h1>
+    
+    <p class="description sub-text">I'm a French computer science student, currently studying at Côte d'Azur University</p>
 
-    <title>Francois Flandin</title>
-    <link rel="icon" href="docs/logo.png">
+    <div class="terminal">
+      <div class="command">
+        <p class="cmd-text"><span class="cmd-base">francois@flandin</span>:~$ <span class="cmd-command">getresume</span></p>
+        <p class="cmd-text"><a href="docs/cv_light.pdf" target="_blank" download>resume.pdf</a></p>
+      </div>
+      <div class="command">
+        <p class="cmd-text"><span class="cmd-base">francois@flandin</span>:~$ <span class="cmd-command">getcontact</span></p>
+        <p class="cmd-text">
+          ["<a href="mailto:francoisflandin@proton.me">flandinfrancois@proton.me</a>",
+          "<a href="https://github.com/omelette-bio">github</a>",
+          "linkedin"]
+        </p>
+      </div>
+      <div class="command">
+        <p class="cmd-text"><span class="cmd-base">francois@flandin</span>:~$ <span class="cmd-command">getinterests</span></p>
+        <p class="cmd-text">["computer science","manga reading","<a href="https://steamcommunity.com/id/omelette-bio/" target="_blank">gaming</a>","animation"]</p>
+      </div>
+      <div class="command">
+        <p class="cmd-text"><span class="cmd-base">francois@flandin</span>:~$ <span class="cmd-command">geteducation</span></p>
+        <p class="cmd-text">Côte d'Azur University : computer science degree from 2021 to 2024</p>
+        <p class="cmd-text">Also a member of the university's <a href="https://gdsc.community.dev/cote-dazur-university/">GDSC</a></p>
+      </div>
+      <div class="command">
+        <p class="cmd-text"><span class="cmd-base">francois@flandin</span>:~$ <span class="cmd-command">getskills</span></p>
+        <p class="cmd-text">["Python","Rust","C","Ocaml","Java"]</p>
+      </div>
+    </div>
 
-    <link rel="stylesheet" href="index.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Inter:wght@300;500&family=JetBrains+Mono&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"
-    >
-  </head>
-  <body>
-    <main>
-      <header>
-        <div class="header flex-col-center">
-          <p class="sub-text color1">[ omelette-bio ]</p>
-          <h1>Francois Flandin.</h1>
-          <p class="sub-text color2">
-            CS student at Université Côte d’Azur
-          </p>
-          <div>
-            <ul class="links color3">
-              <li>[ <a href="docs/cv_light.pdf" download target="_blank">my resume</a> ]</li>
-              <li>[ <a href="https://github.com/omelette-bio" target="_blank">github</a> ]</li>
-              <li>[ <a>linkedin</a> ]</li>
-            </ul>
-          </div>
+    <div class="projects" id="projects">
+      <h2 class="part-title">My projects</h2>
+      <div class="project">
+        <div class="project-description">
+          <h3><a href="https://github.com/omelette-bio/mrsync" target="_blank">mini-rsync [05.2023]</a></h3>
+          <p class="cmd-text">End of semester project of the system programming course, consisting of making a mini rsync but it only works locally</p>
         </div>
-      </header>
+      </div>
+      <div class="project">
+        <div class="project-description">
+          <h3><a href="https://github.com/omelette-bio/projet-concept-ia" target="_blank">ai concepts [05.2023]</a></h3>
+          <p class="cmd-text">End of semester project of the ai concepts course, consisting of making a program creating problem solving graphs</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-description">
+          <h3>random text generation [WIP]</h3>
+          <p class="cmd-text">Final project of the functionnal programming course, consisting of making an ai-like text generator in OCaml using Markov Chains.</p>
+        </div>
+      </div>
+    </div>
 
-      <section>
-        <article class="flex-col-center">
-          <h2 class="part-title">~ > about me</h2>
-          <div class="flex-col-center">
-            <p class="intro">Hello, my name is <span class="text-highlight">Francois Flandin</span></p>
-            <p class="intro">I'm a CS student at University Côte d’Azur, <br>passionate about computer science, low level development, and computer architecture.</p>
-            <p class="intro">I'm currently learning <span class="rust">Rust</span>, and it's my favorite programming language with <span class="python">Python</span>.<br>
-            But I also like to use C, Java, and OCaml.</p>
-          </div>
-        </article>
+    <div class="contact" id="contact">
+      <h2 class="part-title">Contact me</h2>
+      <div class="contact-container">
+        <div class="contact-item">
+          <a href="mailto:flandinfrancois@proton.me">mail</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/omelette-bio">github</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/fran%C3%A7ois-flandin-b2a8b2295/">linkedin</a>
+        </div>
+      </div>
+    </div>
 
-        <article class="flex-col-center">
-          <h2 class="part-title">~ > skills</h2>
-          <ul class="comps">
-            <li class="comps-title">[ programming ]</li>
-            <li class="comps-elem">
-              <img src="docs/icons/rust.png" alt="rust" class="icons">
-              <img src="docs/icons/python.png" alt="python" class="iconxw">
-              <img src="docs/icons/c.png" alt="c" class="iconxw">
-              <img src="docs/icons/java.png" alt="java" class="iconxw">
-              <img src="docs/icons/ocaml.png" alt="ocaml" class="iconxw">
-            </li>
-            <li class="comps-title">[ languages ]</li>
-            <li class="comps-elem">French (native), English (B2)</li>
-            <li class="comps-title">[ others ]</li>
-            <li class="comps-elem jsp"> 
-              <span>Processor microarchitecture design,</span>
-              <span>computer architecture,</span>
-              <span>linux,</span>
-              <span>low level development,</span>
-              <span>system programming,</span>
-              <span>object-oriented programming,</span>
-              <span>functionnal programming</span>
-            </li>
-          </ul>
-        </article>
-
-        <article class="flex-col-center">
-          <h2 class="part-title">~ > studies</h2>
-          <a href="https://upinfo.univ-cotedazur.fr">
-            <h3 class="link">
-              Université Nice Côte d'Azur [2021 - 2024]
-            </h3>
-          </a>
-          <p>
-            Computer Science Licence<br>Member of the computer club during the year 2023 - 2024
-          </p>
-        </article>
-        
-        <article class="flex-col-center">
-          <h2 class="part-title">~ > uprojects</h2>
-
-          <a href="https://github.com/omelette-bio/bataille-navale" target="_blank">
-            <h3 class="link">battleship [12.2022]</h3>
-          </a>
-          <p>End of semester project of the data structures and C programming course</p>
-
-          <a href="https://github.com/omelette-bio/mrsync" target="_blank">
-            <h3 class="link">mini-rsync [05.2023]</h3>
-          </a>
-          <p>End of semester project of the system programming course, consisting of making a mini rsync, only works locally</p>
-
-          <a href="https://github.com/omelette-bio/projet-concept-ia" target="_blank">
-            <h3 class="link">ai concepts [05.2023]</h3>
-          </a>
-          <p>End of semester project of the ai concepts course, consisting of making a program creating problem solving graphs</p>
-
-          <a href="https://github.com/omelette-bio/td1-java" target="_blank">
-            <h3 class="link">text rpg [09.2023]</h3>
-          </a>
-          <p>First project of the object oriented programming and design course, consisting of making a simple rpg in java, 
-            in order to get familiar with object oriented programming.</p>
-          
-          <a href="https://github.com/omelette-bio/midi2wav" target="_blank">
-            <h3 class="link">midi to wav converter [10.2023]</h3>
-          </a>
-          <p>
-            Second project of the object oriented programming and design course, consisting of making a midi to wav file converter,
-            in order to learn how to use external libraries.
-          </p>
-
-          <a href="#">
-            <h3 class="link">text rpg 2 [WIP]</h3>
-          </a>
-          <p>Third project of the object oriented programming and design course, consisting of remaking the first project while implementing
-            some Desing Patterns.</p>
-
-          <a href="#"">
-            <h3 class="link">text generation [WIP]</h3>
-          </a>
-          <p>Final project of the Functionnal programming, consisting of making an ai-like text generator in OCaml using Markov Chains.</p>
-      </section>
-
-
-
-
-      <footer>
-        <ul class="links color3">
-        <li>
-          [ <a href="mailto:flandinfrancois@proton.me">mail</a> ]
-          [ <a href="https://steamcommunity.com/id/omelette-bio/">steam</a> ]
-          [ <a href="https://open.spotify.com/user/zezwiafwzq7l4pl1onljkzcqz?si=db177d2914164c6e">spotify</a> ]
-          [ <a href="https://discordapp.com/users/381898390662807565">discord</a> ]
-        </li>
-      </ul>
-      <p class="bottom-text color2">
-        <!-- Développé par Francois Flandin -->
-        Developed by Francois Flandin
-      </p>
-      </footer>
-    </main>
-  </body>
+    <div class="footer">
+      <p class="footer-text">François Flandin @2023</p>
+    </div>  
+  </main>
+</body>
+</html>

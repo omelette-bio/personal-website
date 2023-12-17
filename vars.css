@@ -1,31 +1,9 @@
-:root {
-  --title-color-dark: #FFFFFF;
-  --text-color1-dark: #EF4AA1;
-  --text-color2-dark: #7e8199;
-  --text-color3-dark: #4aef98;
+:root{
+  --body-bg-color: #ddd;
+  --term-bg-color: #303446;
 
-  --highlight-color: #7e57c2;
-  --highlight-rust-color: #c43f06;
-  --highlight-python-color: #3776AB;
+  --primary-color: #51576d;
+  --term-color: #b7bdf8;
 
-  --bg-color1-dark: #222222;
-  --bg-color2-dark: #272727;
-
-  --ctp-mocha-flamingo: #f2cdcd;
-
-  --font-1 : 'Share Tech Mono', monospace;
-  --font-2 : 'JetBrains Mono', monospace;
-  --font-3 : 'Inter', sans-serif;
-  --font-4 : 'Epilogue', sans-serif;
-  --font-5 : 'Poppins', sans-serif;
-  --font-6 : 'Consolas', monospace;
-}
-
-@font-face {
-  font-family: 'Consolas';
-  src: url('docs/Consolas.woff') format('woff'),
-      url('docs/Consolas.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  --border-radius: 8px;
 }
