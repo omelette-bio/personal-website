@@ -63,6 +63,11 @@ nav {
   a {
     font-family: 'Inter', sans-serif;
     color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--link-color);
   }
 }
 
@@ -95,8 +100,13 @@ nav {
 }
 
 a {
-  color: #f5a97f;
+  color: var(--link-color);
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 .cmd-text {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.2rem;
@@ -106,6 +116,10 @@ a {
 
 .cmd-base {
   color: #b7fcaf;
+}
+
+.cmd-base::before {
+  content: '➜ ';
 }
 
 .cmd-command {
