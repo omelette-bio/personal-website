@@ -25,6 +25,9 @@ main {
 h1 {
   font-size: 5rem;
   padding: 0 0 3rem 0;
+  background: -webkit-linear-gradient(45deg, #3c81c3, #a9c12f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
