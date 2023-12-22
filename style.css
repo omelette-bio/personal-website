@@ -26,12 +26,14 @@ h1 {
   font-size: 5rem;
   padding: 0 0 3rem 0;
   background: -webkit-linear-gradient(45deg, #3c81c3, #a9c12f);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h2 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .sub-text {
@@ -98,7 +100,7 @@ nav {
 }
 
 .command {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1.5rem 1rem;
 
 }
 
@@ -123,6 +125,10 @@ a:hover {
 
 .cmd-base::before {
   content: '➜ ';
+}
+
+.cmd-title {
+  color: var(--cmd-title-color);
 }
 
 .cmd-command {
@@ -187,4 +193,38 @@ a:hover {
   font-weight: 500;
   color: var(--primary-color);
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 80%;
+  }
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+  }
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .terminal {
+    width: 100%;
+  }
+  .projects {
+    padding: 5rem 0 0 0;
+  }
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-item {
+    margin: 0 0 1rem 0;
+  }
+  .footer {
+    padding: 0 0 2rem 0;
+  }
 }
