@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=JetBrains+Mono:wght@300;500&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=JetBrains+Mono:wght@300;500&family=Silkscreen&family=Fira+Code:wght@300;500;700&display=swap');
 @import url(vars.css);
 
 * {
@@ -113,7 +113,7 @@ a:hover {
 }
 
 .cmd-text {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 1.2rem;
   font-weight: 300;
   color: #b7bdf8;
