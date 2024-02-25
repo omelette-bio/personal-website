@@ -8,5 +8,10 @@
   --cmd-title-color: #e38c8f;
 
   --border-radius: 8px;
-  /*zob*/
+
+  /* just in case */
+  --famicom-bg-color: #fcfcfc;
+  --famicom-black-color: #000000;
+  --famicom-gold-color: #846d21;
+  --famicom-red-color: #940a24;
 }
