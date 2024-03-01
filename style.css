@@ -10,7 +10,7 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: var(--body-bg-color);
+  background-color: var(--body-bg-color-dark);
 }
 
 main {
@@ -19,13 +19,13 @@ main {
 
 .part-title {
   font-family: 'Silkscreen', sans-serif;
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
 }
 
 h1 {
   font-size: 5rem;
   padding: 0 0 3rem 0;
-  background: -webkit-linear-gradient(45deg, #3c81c3, #a9c12f);
+  background: -webkit-linear-gradient(45deg, #3c81c3, var(--gradient-end-dark));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@ h2 {
 .sub-text {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   font-size: 1.3rem;
 }
 
@@ -67,7 +67,7 @@ nav {
   
   a {
     font-family: 'Inter', sans-serif;
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
     text-decoration: none;
   }
   
@@ -125,6 +125,10 @@ a:hover {
 
 .cmd-base::before {
   content: '➜ ';
+}
+
+.cmd-elem {
+  color: var(--cmd-elem-color);
 }
 
 .cmd-title {
@@ -191,7 +195,7 @@ a:hover {
 .footer p {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   font-size: 1rem;
 }
 

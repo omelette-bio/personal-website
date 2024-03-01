@@ -1,13 +1,19 @@
 :root{
-  --body-bg-color: #ddd;
+  --body-bg-color-light: #ddd;
+  --body-bg-color-dark: #232634;
   --term-bg-color: #303446;
 
-  --primary-color: #51576d;
+  --primary-color-light: #51576d;
+  --primary-color-dark: #c6d0f5;
   --term-color: #b7bdf8;
   --link-color: #f5a97f;
   --cmd-title-color: #e38c8f;
+  --cmd-elem-color: #e5c890;
 
   --border-radius: 8px;
+
+  --gradient-end-light: #a9c12f;
+  --gradient-end-dark: #ff00fd;
 
   /* just in case */
   --famicom-bg-color: #fcfcfc;
