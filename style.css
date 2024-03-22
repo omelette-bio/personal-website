@@ -120,6 +120,11 @@ a:hover {
   color: #b7bdf8;
 }
 
+.cmd-text {
+  max-width: 100%;
+  word-wrap: normal;
+}
+
 .cmd-base {
   color: #b7fcaf;
 }
