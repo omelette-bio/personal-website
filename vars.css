@@ -1,12 +1,15 @@
 :root{
   --body-bg-color-light: #ddd;
-  --body-bg-color-dark: #232634;
-  --term-bg-color: #303446;
+  /* --body-bg-color-dark: #232634; */
+  --term-bg-color: #212733;
+
+  --body-bg-color-dark: #1f2430;
 
   --primary-color-light: #51576d;
   --primary-color-dark: #c6d0f5;
-  --term-color: #b7bdf8;
-  --link-color: #f5a97f;
+  --term-color: #73d0ff;
+  --tkt-frere: #ffcc66;
+  --link-color: #d5ff80;
   --cmd-title-color: #e38c8f;
   --cmd-elem-color: #e5c890;
 
@@ -21,3 +24,8 @@
   --famicom-gold-color: #846d21;
   --famicom-red-color: #940a24;
 }
+
+/* 
+#d2991d 
+#ab8ac1
+*/
