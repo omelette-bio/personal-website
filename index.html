@@ -24,6 +24,47 @@
     <section id="content">
     </section>
 
+    <section id="pproj1">
+      <p class="skill-text">Project 1</p>
+      <p class="project-text"><u>name:</u> joke discord bot</p>
+      <p class="project-text"><u>date:</u> april 2023</p>
+      <p class="project-text"><u>language:</u> python</p>
+      <p class="project-text"><u>description:</u></p>
+      <p class="project-text">Little discord bot to make stupid french jokes</p>
+      <div class="interaction-div">
+        <p class="interaction-text"><a href="https://github.com/omelette-bio/potit_blagueur_pouete_pouete" target="_blank">[GitHub repo]</a></p>
+        <p class="interaction-text" onclick="goToPProject2()">[Next]</p>
+        <p class="interaction-text" onclick="backToMenu()">[Back]</p>
+      </div>
+    </section>
+
+    <section id="pproj2">
+      <p class="skill-text">Project 2</p>
+      <p class="project-text"><u>name:</u> cowlang interpreter</p>
+      <p class="project-text"><u>date:</u> october 2023</p>
+      <p class="project-text"><u>language:</u> python</p>
+      <p class="project-text"><u>description:</u></p>
+      <p class="project-text">Interpreter for the CowLang esolang, I also made a discord bot but can't find it :/</p>
+      <div class="interaction-div">
+        <p class="interaction-text"><a href="https://github.com/omelette-bio/cowlang" target="_blank">[GitHub repo]</a></p>
+        <p class="interaction-text" onclick="goToPProject3()">[Next]</p>
+        <p class="interaction-text" onclick="backToMenu()">[Back]</p>
+      </div>
+    </section>
+
+    <section id="pproj3">
+      <p class="skill-text">Project 3</p>
+      <p class="project-text"><u>name:</u> assembly interpreter</p>
+      <p class="project-text"><u>date:</u> march/april 2024</p>
+      <p class="project-text"><u>language:</u> rust</p>
+      <p class="project-text"><u>description:</u></p>
+      <p class="project-text">Interpreter for assembly programs, works with line per line interpretation and also by passing files.</p>
+      <div class="interaction-div">
+        <p class="interaction-text"><a href="https://github.com/omelette-bio/cpu-sim" target="_blank">[GitHub repo]</a></p>
+        <p class="interaction-text" onclick="backToMenu()">[Back]</p>
+      </div>
+    </section>
+
     <section id="proj1">
       <p class="skill-text">Project 1</p>
       <p class="project-text"><u>name:</u> mini-rsync</p>
@@ -90,7 +131,8 @@ consisting of building a mini-C compiler in groups of two.</p>
       <p class="interaction-text" id="interests-page">[My Interests]</p>
       <p class="interaction-text" onclick="goToProgSkills()">[My Programming Skills]</p>
       <p class="interaction-text" id="th-page">[My Theoretical Skills]</p>
-      <p class="interaction-text" onclick="goToProject1()">[My Projects]</p>
+      <p class="interaction-text" onclick="goToProject1()">[My University Projects]</p>
+      <p class="interaction-text" onclick="goToPProject1()">[My Personal Projects]</p>
     </section>
 
     <section id="p-skills">
@@ -98,15 +140,15 @@ consisting of building a mini-C compiler in groups of two.</p>
       <div class="progs">
         <div class="prog-lang">
           <img src="img/pl-soft/rust.svg" width="70">
-          <p class="perc">35%</p>
+          <p class="perc">40%</p>
         </div>
         <div class="prog-lang">
           <img src="img/pl-soft/c.svg" width="70">
-          <p class="perc">30%</p>
+          <p class="perc">40%</p>
         </div>
         <div class="prog-lang">
           <img src="img/pl-soft/python.svg" width="70">
-          <p class="perc">40%</p>
+          <p class="perc">60%</p>
         </div>
         <div class="prog-lang">
           <img src="img/pl-soft/java.svg" width="70">
@@ -135,16 +177,22 @@ consisting of building a mini-C compiler in groups of two.</p>
     <section id="contact">
       <p class="skill-text"> If you want to contact me </p>
       <div class="soft">
-        <div class="prog-lang">
-          <img src="img/network/github.svg" width="70">
+        <a href="https://github.com/omelette-bio" target="_blank">
+          <div class="prog-lang">
+            <img src="img/network/github.svg" width="70">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/fran%C3%A7ois-flandin-b2a8b2295/" target="_blank">
+          <div class="prog-lang">
+            <img src="img/network/linkedin.svg" width="70">
+          </div>
+        </a>
+        <a href="mailto:flandinfrancois@proton.me" target="_blank">
+          <div class="prog-lang">
+            <img src="img/network/prtn.svg" width="70">
+          </div>
+        </a>
         </div>
-        <div class="prog-lang">
-          <img src="img/network/linkedin.svg" width="70">
-        </div>
-        <div class="prog-lang">
-          <img src="img/network/prtn.svg" width="70">
-        </div>
-      </div>
       <p class="interaction-text" onclick="backToMenu()">[Back]</p>
     </section>
     <script src="app.js"></script>

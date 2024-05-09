@@ -22,6 +22,15 @@ document.getElementById('proj3').innerHTML = '';
 let proj4_div = document.getElementById('proj4').innerHTML;
 document.getElementById('proj4').innerHTML = '';
 
+let pproj1_div = document.getElementById('pproj1').innerHTML;
+document.getElementById('pproj1').innerHTML = '';
+
+let pproj2_div = document.getElementById('pproj2').innerHTML;
+document.getElementById('pproj2').innerHTML = '';
+
+let pproj3_div = document.getElementById('pproj3').innerHTML;
+document.getElementById('pproj3').innerHTML = '';
+
 
 document.getElementById('content').innerHTML = links_div;
 
@@ -48,6 +57,18 @@ function goToProject2() {
 
 function goToProject3() {
   document.getElementById('content').innerHTML = proj3_div;
+}
+
+function goToPProject1() {
+  document.getElementById('content').innerHTML = pproj1_div;
+}
+
+function goToPProject2() {
+  document.getElementById('content').innerHTML = pproj2_div;
+}
+
+function goToPProject3() {
+  document.getElementById('content').innerHTML = pproj3_div;
 }
 
 function goToProject4() {

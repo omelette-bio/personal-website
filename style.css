@@ -3,8 +3,11 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 main {
-  animation:colorPulse 5s infinite ease-in-out;
   background-image:radial-gradient(#040, #111);
   box-shadow:0 0 5vmin 1vmin #000 inset;
   box-sizing:border-box;
@@ -21,6 +24,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  animation:colorPulse 5s infinite ease-in-out;
 }
 
 main::after {
@@ -36,13 +40,24 @@ main::after {
   z-index:2;
 }
 
+main:before {
+  animation:wave 10s infinite ease-in-out;
+  content:"";
+  height:20vh;
+  left:0;
+  opacity:.5;
+  position:absolute;
+  right:0;
+  z-index:1;
+  pointer-events: none;
+}
+
 header {
   text-align: center;
   width: 60%;
 }
 
 .header-text {
-  color: #4F5;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -63,7 +78,6 @@ section {
 }
 
 .skill-text {
-  color: #4f5;
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
@@ -72,16 +86,15 @@ section {
 }
 
 .interaction-text {
-  color: #4f5;
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
 }
 
 .interaction-text:hover {
-  background-color: #4f5;
-  color: black;
+  background-color: currentColor;
   cursor: pointer;
+  -webkit-text-fill-color: #000;
 }
 
 .prog-lang {
@@ -109,7 +122,6 @@ section {
   width: 28%;
 }
 .perc {
-  color:#4f5;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -120,7 +132,6 @@ a {
 }
 
 .project-text {
-  color: #4f5;
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
@@ -128,4 +139,33 @@ a {
 
 .interaction-div{
   margin-top: 1rem;
+}
+
+@keyframes colorPulse {
+  0%, 100% {
+    color:#4f5;
+  }
+  48%, 52% {
+    color:#090;
+  }
+  50% {
+    color:#060;
+  }
+}
+
+@keyframes wave {
+  0% {
+    box-shadow:0 -10vh 20vh #4f5;
+    top:-100vh;
+  }
+  48%, 52% {
+    box-shadow:0 -10vh 20vh #090;
+  }
+  50% {
+    box-shadow:0 -10vh 20vh #060;
+  }
+  100% {
+    box-shadow:0 -10vh 20vh #4f5;
+    top:200vh;
+  }
 }
